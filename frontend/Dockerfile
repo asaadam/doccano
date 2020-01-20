@@ -1,4 +1,4 @@
-FROM node:13.1.0
+FROM node:13.6.0
 
 # set work directory
 WORKDIR /app
@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . /app/
 
 # install dependencies
-RUN npm install -g npm@latest
+RUN npm i npm@6.9.1-next.0
 RUN npm install
 
 # build project
